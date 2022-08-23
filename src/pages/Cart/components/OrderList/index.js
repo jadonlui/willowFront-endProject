@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import ProductItem from './ProductItem';
 // import { useCart } from '../../../../utils/useCart'
+import { confirm } from '../../../../components/Confirm';
 
 function OrderList(props) {
   const { productsInOrder, setProductsInOrder, currentItem, carts, setCarts } =
@@ -26,6 +27,7 @@ function OrderList(props) {
               {...v}
               // count={v.counts} 因為 v 裡已經有 count 屬性
               removeItem={() => {
+                confirm('商品已刪除');
                 // 錄音檔 7/13 15:35
                 // 1.從目前狀態拷貝出新的變數值(陣列/物件)
                 // 2.在新的變數值(陣列/物件)上做處理
