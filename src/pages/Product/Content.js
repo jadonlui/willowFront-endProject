@@ -82,7 +82,7 @@ function Content(props) {
     <>
       <div className="Mars-cnt-container">
         <div className="Mars-breadcrumb"></div>
-        <div className="Mars-cnt-main d-flex">
+        <div id="Mars-cnt-main" className="Mars-cnt-main d-flex">
           <div
             className="Mars-cnt-imgwr"
             onClick={clickedBool}
