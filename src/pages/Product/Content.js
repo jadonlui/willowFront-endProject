@@ -82,7 +82,7 @@ function Content(props) {
     <>
       <div className="Mars-cnt-container">
         <div className="Mars-breadcrumb"></div>
-        <div className="Mars-cnt-main d-flex">
+        <div id="Mars-cnt-main" className="Mars-cnt-main d-flex">
           <div
             className="Mars-cnt-imgwr"
             onClick={clickedBool}
@@ -132,11 +132,11 @@ function Content(props) {
           <div className="Mars-cnt-nutrition">
             <p className="Mars-nutri-p">營養成分</p>
             <div className="Mars-nutri-flex d-flex">
-              <p className="Mars-nutri-p">熱量：xx kCal</p>
-              <p className="Mars-nutri-p">蛋白質：xx g</p>
-              <p className="Mars-nutri-p">脂肪：x g</p>
-              <p className="Mars-nutri-p">碳水化合物：x g</p>
-              <p className="Mars-nutri-p">鈉：x mg</p>
+              <p className="Mars-nutri-p">熱量：217 kCal</p>
+              <p className="Mars-nutri-p">蛋白質：1.8 g</p>
+              <p className="Mars-nutri-p">脂質：12 g</p>
+              <p className="Mars-nutri-p">碳水化合物：26.5 g</p>
+              <p className="Mars-nutri-p">鈉：240 mg</p>
             </div>
             <p className="Mars-nutri-p">過敏原資訊</p>
             <div className="Mars-allergy-flex d-flex">
@@ -148,11 +148,14 @@ function Content(props) {
           </div>
         </div>
         <Link className="text-decoration-none" to="/Product">
+          {/* eslint-disable-next-line prettier/prettier */}
           <button className="ProjectButton Mars-Button-Linkback">→ 回到商品列表</button>
-          {/* <div className="Mars-Linkback">→ 回到商品列表</div> */}
         </Link>
         <p className="Mars-prod-name Mars-RecBig">産品推薦</p>
-        <ProductRecommandCard RandomProduct={RandomProduct} DonutsEnglishNames={DonutsEnglishNames} />
+        <ProductRecommandCard
+          RandomProduct={RandomProduct}
+          DonutsEnglishNames={DonutsEnglishNames}
+        />
       </div>
     </>
   );

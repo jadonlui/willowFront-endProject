@@ -147,7 +147,7 @@ function Product(props) {
             return (
               <div className="Mars-prod-wrap" key={'b' + v.sid}>
                 <div className="Mars-prod-imgwr">
-                  <Link to={`./${v.sid}`}>
+                  <Link to={`./${v.sid}#Mars-cnt-main`}>
                     {/* eslint-disable-next-line prettier/prettier */}
                     <img
                       src={v.product_img}
