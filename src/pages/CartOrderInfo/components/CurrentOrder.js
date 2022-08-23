@@ -75,9 +75,9 @@ function CurrentOrder(props) {
                     <p class="card-title">總數量</p>
                     <p class="card-title">總金額</p>
                   </div>
-                  <div className="col">
-                    <p class="card-text">{calcTotalNumber()}</p>
-                    <p class="card-text">${calcTotalPrice()}</p>
+                  <div className="col-3">
+                    <p class="card-text text-end">{calcTotalNumber()}</p>
+                    <p class="card-text text-end">${calcTotalPrice()}</p>
                   </div>
                 </div>
               </div>
